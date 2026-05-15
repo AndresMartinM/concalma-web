@@ -45,15 +45,17 @@ async function proyecto() {
         }
     });
 
+    // titulo del proyecto
     document.querySelector("h1").innerHTML = proyectos[n].titulo;
 
-    // objeto 360
+    // objeto 360 https://www.cssscript.com/demo/360-degree-image-viewer-with-pure-javascript-circlr/
 
     // texto explicativo
 
     // carrusel de proceso y partes
 }
 
+// esta parte es importantisima
 proyecto().catch((error) => {
     console.error("Error al cargar el proyecto:", error);
 });
