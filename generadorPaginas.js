@@ -1,7 +1,7 @@
 async function proyecto() {
     var numero = new URLSearchParams(window.location.search).get("nro");
     numero = Number(numero);
-    const response = await fetch("proyectos.json");
+    const response = await fetch("https://raw.githubusercontent.com/AndresMartinM/concalma-web/refs/heads/main/proyectos.json");
     const proyectos = await response.json();
 
     // carrusel imagenes del objeto completo y en uso
