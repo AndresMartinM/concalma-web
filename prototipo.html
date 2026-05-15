@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <script src="generadorPaginas.js"></script>
+    </head>
+
+    <body>
+        <header class="container">
+            <div
+                class="row justify-content-center align-items-center g-2"
+            >
+                <div class="col">volver</div>
+                <div class="col">Logo</div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            id="triggerId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Dropdown
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item disabled" href="#">Disabled action</a>
+                            <h6 class="dropdown-header">Section header</h6>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">After divider action</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            <!-- retroceder -->
+            <!-- logo al centro segun la era -->
+            <!-- menu hamburguesa
+                proyectos
+                quienes somos + contacto
+                manifiesto
+            -->
+        </header>
+        <main class="container">
+            <div
+                class="row justify-content-center align-items-center g-2"
+            >
+                <div class="col-md-4">
+                     <!-- titulo -->
+                    <!-- carrusel objeto competo en uso -->
+                     <div id="carouselObj" class="carousel slide" data-bs-ride="carousel">
+                        <ol id="carouselObj-ind" class="carousel-indicators">
+                            
+                        </ol>
+                        <div id="carouselObj-inn" class="carousel-inner" role="listbox">
+                        
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselObj"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselObj"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                     
+                </div>
+                <div class="col-md-4">
+                    <!-- titulo -->
+                    <h1>Titulo</h1>
+                    <!-- objeto 360 -->
+                    <img
+                        src="https://picsum.photos/200"
+                        class="img-fluid rounded-top"
+                        alt=""
+                    />
+                    
+                    <!-- texto explicativo -->
+                    <p>Texto explicativo</p>
+                </div>
+                <div class="col-md-4">
+                    <!-- carrusel partes y piezas -->
+                    <!-- texto carrusel -->
+                    <div id="carouselId1" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li
+                                data-bs-target="#carouselId1"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="First slide"
+                            ></li>
+                            <li
+                                data-bs-target="#carouselId1"
+                                data-bs-slide-to="1"
+                                aria-label="Second slide"
+                            ></li>
+                            <li
+                                data-bs-target="#carouselId1"
+                                data-bs-slide-to="2"
+                                aria-label="Third slide"
+                            ></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img
+                                    src="holder.js/900x500/auto/#777:#555/text:First slide"
+                                    class="w-100 d-block"
+                                    alt="First slide"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="holder.js/900x500/auto/#666:#444/text:Second slide"
+                                    class="w-100 d-block"
+                                    alt="Second slide"
+                                />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="holder.js/900x500/auto/#666:#444/text:Third slide"
+                                    class="w-100 d-block"
+                                    alt="Third slide"
+                                />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselId1"
+                            data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselId1"
+                            data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer>
+
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
