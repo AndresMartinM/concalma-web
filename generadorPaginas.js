@@ -1,26 +1,51 @@
 async function proyecto() {
-    var numero = new URLSearchParams(window.location.search).get("nro");
-    numero = Number(numero);
+
+    var n = new URLSearchParams(window.location.search).get("nro");
+    n = Number(n);
     const response = await fetch("https://raw.githubusercontent.com/AndresMartinM/concalma-web/refs/heads/main/proyectos.json");
     const proyectos = await response.json();
 
     // carrusel imagenes del objeto completo y en uso
 
-    proyectos[numero].imagenesCompleto.forEach((x) => {
-        document.querySelector("#carouselObj-ind").innerHTML += `
-        <li data-bs-target="#carouselObj" data-bs-slide-to="` + x + `" class="active" aria-current="true" aria-label="Slide element"></li>`;
-    });
-    proyectos[numero].imagenesCompleto.forEach((x) => {
-        if (x == proyectos[numero].imagenesCompleto[0]) {
-            document.querySelector("#carouselObj-inn").innerHTML += `
-            <div class="carousel-item active"><img src="` + x + `" class="w-100 d-block" alt="Slide element"/></div>`;
+    const carObjInd = document.querySelector("#carouselObj-ind");
+    const carObjInn = document.querySelector("#carouselObj-inn");
+
+    proyectos[n].imagenesCompleto.forEach((x,i) => {
+        if (x == proyectos[n].imagenesCompleto[0]) {
+            carObjInd.innerHTML += `
+            <li
+                data-bs-target="#carouselObj"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="First slide"
+            ></li>`;
+        } else {
+        carObjInd.innerHTML += `
+        <li 
+        data-bs-target="#carouselObj" 
+        data-bs-slide-to="` + i + `" 
+        class="active" 
+        aria-current="true" 
+        aria-label="Slide element"
+        ></li>`;
         }
-        document.querySelector("#carouselObj-inn").innerHTML += `
-        <div class="carousel-item"><img src="` + x + `" class="w-100 d-block" alt="Slide element"/></div>`;
+    });
+    proyectos[n].imagenesCompleto.forEach((x) => {
+        if (x == proyectos[n].imagenesCompleto[0]) {
+            carObjInn.innerHTML += `
+            <div class="carousel-item active">
+            <img src="` + x + `" class="w-100 d-block" alt="Slide element"/>
+            </div>`;
+        } else {
+        carObjInn.innerHTML += `
+        <div class="carousel-item">
+        <img src="` + x + `" class="w-100 d-block" alt="Slide element"/>
+        </div>`;
+        }
     });
 
-
-    // titulo
+    document.querySelector("h1").innerHTML = proyectos[n].titulo;
 
     // objeto 360
 
@@ -28,3 +53,7 @@ async function proyecto() {
 
     // carrusel de proceso y partes
 }
+
+proyecto().catch((error) => {
+    console.error("Error al cargar el proyecto:", error);
+});
