@@ -80,7 +80,7 @@ proyecto().catch((error) => {
     console.error("Error al cargar el proyecto:", error);
 });
 
-$(function(){
+$(function orbit(){
 	var pic_X=$('.orbit').offset().left;
 	var pic_Y=$('.orbit').offset().top;
 	var pic_W=$('.orbit').width()/2;
