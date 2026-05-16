@@ -1,3 +1,5 @@
+var liNumber = 0;
+
 async function proyecto() {
 
     var n = new URLSearchParams(window.location.search).get("nro");
@@ -51,13 +53,56 @@ async function proyecto() {
 
     // objeto 360 https://www.cssscript.com/demo/360-degree-image-viewer-with-pure-javascript-circlr/ https://www.jqueryscript.net/demo/Super-Tiny-jQuery-360-Degrees-Product-Image-Viewer/
 
+    document.querySelector("#image360").innerHTML += `
+        <ul class="orbit">
+        </ul>
+    `;
+
+    proyectos[n].imagenes360.forEach((x) =>{
+        document.querySelector(".orbit").innerHTML += `
+         <li><img src="` + x + `" /></li>
+        `
+    });
+
+    liNumber = proyectos[n].imagenes360.lenght -1;
+
+
     // texto explicativo
     document.querySelector("#descripcion").innerHTML = proyectos[n].descripcion;
 
     // carrusel de proceso y partes
+
+    
 }
 
 // esta parte es importantisima
 proyecto().catch((error) => {
     console.error("Error al cargar el proyecto:", error);
 });
+
+$(function(){
+	var pic_X=$('.orbit').offset().left;
+	var pic_Y=$('.orbit').offset().top;
+	var pic_W=$('.orbit').width()/2;
+	var pic_H=$('.orbit').height()/2;
+	var center_X=pic_X+pic_W;
+	var center_Y=pic_Y+pic_H;
+	var movestop=pic_W/10;
+	$('orbit').mousemove(function(event){
+		var mouse_X=event.pageX;
+		var mouse_Y=event.pageY;
+		if(mouse_X-center_X<=0){
+			moveImg(mouse_X,mouse_Y,'left')
+		}else{
+			moveImg(mouse_X,mouse_Y)
+		}
+	});
+	function moveImg(m_X,m_Y,dir){
+		var index=Math.ceil(Math.abs(m_X-center_X)/movestop);
+		if(dir){
+			$('.orbit li').eq(index).show().siblings().hide();
+		}else{
+			$('.orbit li').eq(liNumber-index).show().siblings().hide();
+		}
+	}
+})
