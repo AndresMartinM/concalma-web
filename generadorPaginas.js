@@ -109,13 +109,13 @@ imageContainer.addEventListener('mousemove', (e) => {
     
     const deltaX = e.clientX - startX;
     // Adjust the divisor (e.g., 10) to change rotation sensitivity
-    if (Math.abs(deltaX) > 10) { 
+    if (Math.abs(deltaX) > 3) { 
         if (deltaX > 0) {
             currentFrame = (currentFrame - 1 + totalFrames) % totalFrames;
         } else {
             currentFrame = (currentFrame + 1) % totalFrames;
         }
-        imageEl.src = images[currentFrame];
+        imageEl.src = images[currentFrame].src;
         startX = e.clientX; // Reset start position
     }
 });
