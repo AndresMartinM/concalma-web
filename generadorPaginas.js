@@ -88,24 +88,11 @@ const imageEl = document.getElementById('spin-image');
 var totalFrames = 0; // Number of images in your sequence
 
 
-let isDragging = false;
 let startX = 0;
 let currentFrame = 0;
 
-// 1. Preload the images
-
-// 2. Event Listeners
-imageContainer.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startX = e.clientX;
-});
-
-window.addEventListener('mouseup', () => {
-    isDragging = false;
-});
 
 imageContainer.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
     totalFrames = framesCount;
     
     const deltaX = e.screenX - startX;
