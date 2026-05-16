@@ -53,13 +53,13 @@ async function proyecto() {
     document.querySelector("h1").innerHTML = proyectos[n].titulo;
 
     // objeto 360 https://www.cssscript.com/demo/360-degree-image-viewer-with-pure-javascript-circlr/ https://www.jqueryscript.net/demo/Super-Tiny-jQuery-360-Degrees-Product-Image-Viewer/
-
+/*
     document.querySelector("#image360").innerHTML += `
         <div class="orbit">
         <img id="spin-image">
         </div>
     `;
-
+*/
     proyectos[n].imagenes360.forEach((x) =>{
         images.push(x);
         /*document.querySelector(".orbit").innerHTML += `
