@@ -81,8 +81,8 @@ proyecto().catch((error) => {
 });
 
 $(function(){
-	var pic_X=$('.orbit').offset().left;
-	var pic_Y=$('.orbit').offset().top;
+	var pic_X=$('.orbit').offset();
+	var pic_Y=$('.orbit').offset();
 	var pic_W=$('.orbit').width()/2;
 	var pic_H=$('.orbit').height()/2;
 	var center_X=pic_X+pic_W;
