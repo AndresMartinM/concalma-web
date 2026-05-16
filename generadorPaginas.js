@@ -46,6 +46,7 @@ async function proyecto() {
     });
 
     // titulo del proyecto
+    document.querySelector("title").innerHTML = proyectos[n].titulo;
     document.querySelector("h1").innerHTML = proyectos[n].titulo;
 
     // objeto 360 https://www.cssscript.com/demo/360-degree-image-viewer-with-pure-javascript-circlr/ https://www.jqueryscript.net/demo/Super-Tiny-jQuery-360-Degrees-Product-Image-Viewer/
