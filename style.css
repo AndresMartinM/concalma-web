@@ -1,11 +1,11 @@
 body {
-    background-color: white;
+    background-color: #efe9ea;
 }
 
 header {
     height: 64px;
     padding: 10px;
-    background-image: url('dither.png');
+    background-image: url('halftone.png');
     color: #1c1f23;
 }
 
@@ -32,7 +32,7 @@ li {
 }
 
 main {
-    margin-top: 60px;
+    margin-top: 64px;
 }
 
 .container {
