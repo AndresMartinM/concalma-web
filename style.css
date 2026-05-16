@@ -1,0 +1,38 @@
+body {
+    background-color: gray;
+}
+
+header {
+    height: 64px;
+    padding: 10px;
+    background-image: url('dither.png');
+}
+
+.volver {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.logotipo {
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
+.hamburguesa {
+    float: right;
+}
+
+li {
+    overflow: hidden;
+}
+
+main {
+    margin-top: 60px;
+}
+
+#image360 {
+    padding: 20px;
+}
