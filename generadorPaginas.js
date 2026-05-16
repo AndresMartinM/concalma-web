@@ -1,7 +1,9 @@
-var framesCount = 0;
-var images = [];
+
 
 async function proyecto() {
+
+    var framesCount = 0;
+var images = [];
 
     var n = new URLSearchParams(window.location.search).get("nro");
     n = Number(n);
@@ -53,13 +55,13 @@ async function proyecto() {
     document.querySelector("h1").innerHTML = proyectos[n].titulo;
 
     // objeto 360 https://www.cssscript.com/demo/360-degree-image-viewer-with-pure-javascript-circlr/ https://www.jqueryscript.net/demo/Super-Tiny-jQuery-360-Degrees-Product-Image-Viewer/
-/*
+
     document.querySelector("#image360").innerHTML += `
         <div class="orbit">
-        <img id="spin-image">
+        <img id="spin-image" src="` + proyectos[n].imagenes360[0] + `">
         </div>
     `;
-*/
+
     proyectos[n].imagenes360.forEach((x) =>{
         images.push(x);
         /*document.querySelector(".orbit").innerHTML += `
@@ -67,7 +69,9 @@ async function proyecto() {
         `*/
     });
 
-    framesCount = proyectos[n].imagenes360.lenght;
+    proyectos[n].imagenes360.forEach((x) => {
+        framesCount ++;
+    });
 
 
     // texto explicativo
@@ -76,16 +80,12 @@ async function proyecto() {
     // carrusel de proceso y partes
 
     
-}
 
-// esta parte es importantisima
-proyecto().catch((error) => {
-    console.error("Error al cargar el proyecto:", error);
-});
 
+    
 const imageContainer = document.getElementById('image360');
 const imageEl = document.getElementById('spin-image');
-const totalFrames = framesCount; // Number of images in your sequence
+var totalFrames = 0; // Number of images in your sequence
 
 
 let isDragging = false;
@@ -105,17 +105,25 @@ window.addEventListener('mouseup', () => {
 });
 
 imageContainer.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
+    //if (!isDragging) return;
+    totalFrames = framesCount;
     
-    const deltaX = e.clientX - startX;
+    const deltaX = e.screenX - startX;
     // Adjust the divisor (e.g., 10) to change rotation sensitivity
-    if (Math.abs(deltaX) > 3) { 
+    if (Math.abs(deltaX) > 30) { 
         if (deltaX > 0) {
             currentFrame = (currentFrame - 1 + totalFrames) % totalFrames;
         } else {
             currentFrame = (currentFrame + 1) % totalFrames;
         }
-        imageEl.src = images[currentFrame].src;
-        startX = e.clientX; // Reset start position
+        imageEl.src = images[currentFrame];
+        startX += deltaX; // Reset start position
     }
+});
+
+}
+
+// esta parte es importantisima
+proyecto().catch((error) => {
+    console.error("Error al cargar el proyecto:", error);
 });

@@ -14,7 +14,8 @@
         "imagenes360": [
             "img/img1.jpg",
             "img/img2.jpg",
-            "img/img3.jpg"
+            "img/img3.jpg",
+            "img/img2.jpg"
         ],
         "imagenesProceso": [
             "https://picsum.photos/300/300?random=7",
