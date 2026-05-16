@@ -6,12 +6,12 @@ header {
     height: 64px;
     padding: 10px;
     background-image: url('dither.png');
-    color: #2e222f;
+    color: #1c1f23;
 }
 
 .volver {
     text-decoration: none;
-    color: #2e222f;
+    color: #1c1f23;
     font-size: 24px;
 }
 
@@ -19,7 +19,7 @@ header {
     text-align: center;
     font-weight: bolder;
     text-decoration: none;
-    color: #2e222f;
+    color: #1c1f23;
 }
 
 .hamburguesa {
