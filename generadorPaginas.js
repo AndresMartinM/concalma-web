@@ -51,6 +51,7 @@ async function proyecto() {
     // objeto 360 https://www.cssscript.com/demo/360-degree-image-viewer-with-pure-javascript-circlr/ https://www.jqueryscript.net/demo/Super-Tiny-jQuery-360-Degrees-Product-Image-Viewer/
 
     // texto explicativo
+    document.querySelector("#descripcion").innerHTML = proyectos[n].descripcion;
 
     // carrusel de proceso y partes
 }
