@@ -4,6 +4,9 @@ body {
 
 header {
     height: 64px;
+}
+
+header, footer{
     padding: 10px;
     background-image: url('halftone.png');
     color: #1c1f23;
