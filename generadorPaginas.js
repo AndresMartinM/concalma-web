@@ -1,4 +1,5 @@
-var liNumber = 0;
+var framesCount = 0;
+var images = [];
 
 async function proyecto() {
 
@@ -54,17 +55,19 @@ async function proyecto() {
     // objeto 360 https://www.cssscript.com/demo/360-degree-image-viewer-with-pure-javascript-circlr/ https://www.jqueryscript.net/demo/Super-Tiny-jQuery-360-Degrees-Product-Image-Viewer/
 
     document.querySelector("#image360").innerHTML += `
-        <ul class="orbit">
-        </ul>
+        <div class="orbit">
+        <img id="spin-image">
+        </div>
     `;
 
     proyectos[n].imagenes360.forEach((x) =>{
-        document.querySelector(".orbit").innerHTML += `
-         <li><img src="` + x + `" /></li>
-        `
+        images.push(x);
+        /*document.querySelector(".orbit").innerHTML += `
+         <img src="` + x + `" />
+        `*/
     });
 
-    liNumber = proyectos[n].imagenes360.lenght -1;
+    framesCount = proyectos[n].imagenes360.lenght;
 
 
     // texto explicativo
@@ -80,3 +83,39 @@ proyecto().catch((error) => {
     console.error("Error al cargar el proyecto:", error);
 });
 
+const imageContainer = document.getElementById('image360');
+const imageEl = document.getElementById('spin-image');
+const totalFrames = framesCount; // Number of images in your sequence
+
+
+let isDragging = false;
+let startX = 0;
+let currentFrame = 0;
+
+// 1. Preload the images
+
+// 2. Event Listeners
+imageContainer.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX;
+});
+
+window.addEventListener('mouseup', () => {
+    isDragging = false;
+});
+
+imageContainer.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    
+    const deltaX = e.clientX - startX;
+    // Adjust the divisor (e.g., 10) to change rotation sensitivity
+    if (Math.abs(deltaX) > 10) { 
+        if (deltaX > 0) {
+            currentFrame = (currentFrame - 1 + totalFrames) % totalFrames;
+        } else {
+            currentFrame = (currentFrame + 1) % totalFrames;
+        }
+        imageEl.src = images[currentFrame].src;
+        startX = e.clientX; // Reset start position
+    }
+});
