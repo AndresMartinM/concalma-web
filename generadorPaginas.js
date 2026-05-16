@@ -115,7 +115,7 @@ imageContainer.addEventListener('mousemove', (e) => {
         } else {
             currentFrame = (currentFrame + 1) % totalFrames;
         }
-        imageEl.src = images[currentFrame].src;
+        imageEl.src = images[currentFrame];
         startX = e.clientX; // Reset start position
     }
 });
