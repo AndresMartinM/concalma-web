@@ -105,7 +105,7 @@ window.addEventListener('mouseup', () => {
 });
 
 imageContainer.addEventListener('mousemove', (e) => {
-    //if (!isDragging) return;
+    if (!isDragging) return;
     totalFrames = framesCount;
     
     const deltaX = e.screenX - startX;
