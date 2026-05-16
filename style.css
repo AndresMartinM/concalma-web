@@ -1,16 +1,17 @@
 body {
-    background-color: gray;
+    background-color: white;
 }
 
 header {
     height: 64px;
     padding: 10px;
     background-image: url('dither.png');
+    color: #2e222f;
 }
 
 .volver {
     text-decoration: none;
-    color: black;
+    color: #2e222f;
     font-size: 24px;
 }
 
@@ -18,12 +19,13 @@ header {
     text-align: center;
     font-weight: bolder;
     text-decoration: none;
-    color: black;
+    color: #2e222f;
 }
 
 .hamburguesa {
     float: right;
 }
+
 
 li {
     overflow: hidden;
