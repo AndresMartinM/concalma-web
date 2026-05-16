@@ -1,4 +1,19 @@
 
+/*
+
+asignar bg-color y color via js, desde el json
+
+const element = document.getElementById("myElement");
+
+// Change single properties
+element.style.color = "blue";
+element.style.backgroundColor = "yellow"; // use camelCase
+element.style.fontSize = "20px";
+
+// Change multiple styles at once (overwrites existing inline styles)
+element.style.cssText = "color: blue; background-color: yellow;";
+*/
+
 
 async function proyecto() {
 
