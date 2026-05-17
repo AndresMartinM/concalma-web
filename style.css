@@ -111,3 +111,7 @@ md-block {
 md-block h1 {
     text-align: center;
 }
+
+#perfiles {
+    padding: 12px;
+}
