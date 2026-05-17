@@ -126,13 +126,17 @@ async function proyecto() {
             carPartInn.innerHTML += `
             <div class="carousel-item active">
             <img src="` + x.src + `" class="w-100 d-block" alt=""/>
+            <div class="carousel-caption d-none d-md-block">
             <p>` + x.texto + `</p>
+            </div>
             </div>`;
         } else {
             carPartInn.innerHTML += `
         <div class="carousel-item">
         <img src="` + x.src + `" class="w-100 d-block" alt="Slide element"/>
+        <div class="carousel-caption d-none d-md-block">
         <p>` + x.texto + `</p>
+        </div>
         </div>`;
         }
     });
