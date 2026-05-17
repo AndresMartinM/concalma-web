@@ -1,36 +1,24 @@
 
-/*
-
-asignar bg-color y color via js, desde el json
-
-const element = document.getElementById("myElement");
-
-// Change single properties
-element.style.color = "blue";
-element.style.backgroundColor = "yellow"; // use camelCase
-element.style.fontSize = "20px";
-
-// Change multiple styles at once (overwrites existing inline styles)
-element.style.cssText = "color: blue; background-color: yellow;";
-*/
-
-
 async function proyecto() {
 
-    var framesCount = 0;
-var images = [];
-
+    // reconocer el numero de proyecto
     var n = new URLSearchParams(window.location.search).get("nro");
     n = Number(n);
+
+    // cargar el json de proyectos
     const response = await fetch("https://raw.githubusercontent.com/AndresMartinM/concalma-web/refs/heads/main/proyectos.json");
     const proyectos = await response.json();
 
-    // carrusel imagenes del objeto completo y en uso
+    // asignar el color del fondo y del texto
+    const main = document.querySelector("main");
+    document.body.style.backgroundColor = proyectos[n].colorFondo;
+    document.body.style.color = proyectos[n].colorTexto;
 
+    // carrusel imagenes del objeto completo y en uso
     const carObjInd = document.querySelector("#carouselObj-ind");
     const carObjInn = document.querySelector("#carouselObj-inn");
 
-    proyectos[n].imagenesCompleto.forEach((x,i) => {
+    proyectos[n].imagenesCompleto.forEach((x, i) => {
         if (x == proyectos[n].imagenesCompleto[0]) {
             carObjInd.innerHTML += `
             <li
@@ -41,7 +29,7 @@ var images = [];
                 aria-label="First slide"
             ></li>`;
         } else {
-        carObjInd.innerHTML += `
+            carObjInd.innerHTML += `
         <li 
         data-bs-target="#carouselObj" 
         data-bs-slide-to="` + i + `" 
@@ -58,7 +46,7 @@ var images = [];
             <img src="` + x + `" class="w-100 d-block" alt="Slide element"/>
             </div>`;
         } else {
-        carObjInn.innerHTML += `
+            carObjInn.innerHTML += `
         <div class="carousel-item">
         <img src="` + x + `" class="w-100 d-block" alt="Slide element"/>
         </div>`;
@@ -69,7 +57,15 @@ var images = [];
     document.querySelector("title").innerHTML = proyectos[n].titulo;
     document.querySelector("h1").innerHTML = proyectos[n].titulo;
 
-    // objeto 360 https://www.cssscript.com/demo/360-degree-image-viewer-with-pure-javascript-circlr/ https://www.jqueryscript.net/demo/Super-Tiny-jQuery-360-Degrees-Product-Image-Viewer/
+    // objeto 360
+    var images = [];
+    const imageContainer = document.getElementById('image360');
+    const imageEl = document.getElementById('spin-image');
+    var totalFrames = proyectos[n].imagenes360.length;
+
+
+    let startX = 0;
+    let currentFrame = 0;
 
     document.querySelector("#image360").innerHTML += `
         <div class="orbit">
@@ -77,15 +73,23 @@ var images = [];
         </div>
     `;
 
-    proyectos[n].imagenes360.forEach((x) =>{
+    proyectos[n].imagenes360.forEach((x) => {
         images.push(x);
-        /*document.querySelector(".orbit").innerHTML += `
-         <img src="` + x + `" />
-        `*/
     });
 
-    proyectos[n].imagenes360.forEach((x) => {
-        framesCount ++;
+    // evento para objeto 360
+    imageContainer.addEventListener('mousemove', (e) => {
+
+        const deltaX = e.screenX - startX;
+        if (Math.abs(deltaX) > 30) {
+            if (deltaX > 0) {
+                currentFrame = (currentFrame - 1 + totalFrames) % totalFrames;
+            } else {
+                currentFrame = (currentFrame + 1) % totalFrames;
+            }
+            imageEl.src = images[currentFrame];
+            startX += deltaX;
+        }
     });
 
 
@@ -94,34 +98,13 @@ var images = [];
 
     // carrusel de proceso y partes
 
-    
+
+
+
+
 
 
     
-const imageContainer = document.getElementById('image360');
-const imageEl = document.getElementById('spin-image');
-var totalFrames = 0; // Number of images in your sequence
-
-
-let startX = 0;
-let currentFrame = 0;
-
-
-imageContainer.addEventListener('mousemove', (e) => {
-    totalFrames = framesCount;
-    
-    const deltaX = e.screenX - startX;
-    // Adjust the divisor (e.g., 10) to change rotation sensitivity
-    if (Math.abs(deltaX) > 30) { 
-        if (deltaX > 0) {
-            currentFrame = (currentFrame - 1 + totalFrames) % totalFrames;
-        } else {
-            currentFrame = (currentFrame + 1) % totalFrames;
-        }
-        imageEl.src = images[currentFrame];
-        startX += deltaX; // Reset start position
-    }
-});
 
 }
 
