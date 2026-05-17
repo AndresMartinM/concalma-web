@@ -26,7 +26,9 @@
             "https://picsum.photos/300/300?random=10",
             "https://picsum.photos/300/300?random=11",
             "https://picsum.photos/300/300?random=12"
-        ]
+        ],
+        "colorFondo": "#f0f0f0",
+        "colorTexto": "#333333"
     },
     {
         "titulo": "Titulo del proyecto 2",
