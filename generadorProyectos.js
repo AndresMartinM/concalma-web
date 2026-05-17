@@ -19,7 +19,7 @@ async function proyectos() {
                 />
                 <div class="card-body">
                     <h4 class="card-title">` + x.titulo + `</h4>
-                    <p class="card-text">` + x.descripcion + `</p>
+                    <p class="card-text">` + x.era + `</p>
                 </div>
             </a>
         </div>
