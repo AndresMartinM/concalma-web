@@ -15,12 +15,16 @@ async function proyecto() {
         let card = document.querySelector('#card-num' + i);
 
         data[i].redes.forEach((link) => {
-            card.innerHTML += `
+            if (link.url != "") {
+                (card.innerHTML += `
                 <a href="` + link.url + `" class="btn btn-outline-primary btn-sm card-link">
                     <i class="` + link.icono + `"></i>
                 </a>
-            `;
+            `);
+            }
+
         });
+
     });
 
 }
