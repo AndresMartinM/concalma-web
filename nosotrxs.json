@@ -28,16 +28,6 @@
                 "nombre": "Instagram",
                 "icono": "fab fa-instagram",
                 "url": "https://www.instagram.com/sayen_iriarte"
-            },
-            {
-                "nombre": "LinkedIn",
-                "icono": "fab fa-linkedin",
-                "url": ""
-            },
-            {
-                "nombre": "Correo",
-                "icono": "fa fa-envelope",
-                "url": ""
             }
         ]
     }
