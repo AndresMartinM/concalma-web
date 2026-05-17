@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Andrés Martin",
+        "descripcion": "Diseñador de la Universidad de Chile, con experiencia en manufactura tanto manual como digital. Ha participado en proyectos publicos y privados, relacionados a la innovación, el diseño de productos y la educación. Actualmente trabaja en Amtek, empresa de manufactura aditiva, además se encuentra desarrollando proyectos personales.",
+        "redes": {
+            "instagram": "https://www.instagram.com/andresmartin_elmartin",
+            "linkedin": "",
+            "correo": "mailto:andres.a.martin.m@gmail.com"
+        }
+    },
+    {
+        "nombre": "Amanda Iriarte",
+        "descripcion": "Diseñadora Industrial de la Universidad de Chile...",
+        "redes": {
+            "instagram": "https://www.instagram.com/sayen_iriarte",
+            "linkedin": "",
+            "correo": ""
+        }
+    }
+]
