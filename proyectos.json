@@ -1,6 +1,46 @@
 [
     {
-        "titulo": "Titulo del proyecto 1",
+        "titulo": "Cosplay Setsuna",
+        "era": "pre-concalma",
+        "year": "2025",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.",
+        "sneakPeek": "https://picsum.photos/1800/1800",
+        "imagenesCompleto": [
+            "https://picsum.photos/300/300?random=1",
+            "https://picsum.photos/300/300?random=2",
+            "https://picsum.photos/300/300?random=3",
+            "https://picsum.photos/300/300?random=2",
+            "https://picsum.photos/300/300?random=3"
+        ],
+        "imagenes360": [
+            "img/proyecto01/360/1.png",
+            "img/proyecto01/360/2.png",
+            "img/proyecto01/360/3.png",
+            "img/proyecto01/360/4.png",
+            "img/proyecto01/360/5.png",
+            "img/proyecto01/360/6.png",
+            "img/proyecto01/360/7.png",
+            "img/proyecto01/360/8.png"
+        ],
+        "imagenesSlide": [{
+            "src": "https://picsum.photos/300/300?random=1",
+            "texto": "Imagen 1"
+        },
+        {
+            "src": "https://picsum.photos/300/300?random=2",
+            "texto": "Imagen 2"
+        },
+        {
+            "src": "https://picsum.photos/300/300?random=3",
+            "texto": "Imagen 3"
+        }
+        ],
+        "colorFondo": "#E1DFEC",
+        "colorTexto": "#522673"
+    },
+    {
+        "titulo": "Partitura del bosque",
+        "era": "inmadura",
         "year": "20XX",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.",
         "sneakPeek": "https://picsum.photos/1800/1800",
@@ -34,59 +74,46 @@
             "texto": "Imagen 3"
         }
         ],
-        "colorFondo": "#f0f0f0",
-        "colorTexto": "#ff0000"
+        "colorFondo": "#E4EBE0",
+        "colorTexto": "#31683E"
     },
     {
-        "titulo": "Titulo del proyecto 2",
+        "titulo": "Libro libre",
+        "era": "inmadura",
         "year": "20XX",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.",
         "sneakPeek": "https://picsum.photos/1800/1800",
         "imagenesCompleto": [
             "https://picsum.photos/300/300?random=1",
             "https://picsum.photos/300/300?random=2",
-            "https://picsum.photos/300/300?random=3"
-        ],
-        "imagenes360": [
-            "https://picsum.photos/300/300?random=4",
-            "https://picsum.photos/300/300?random=5",
-            "https://picsum.photos/300/300?random=6"
-        ],
-        "imagenesProceso": [
-            "https://picsum.photos/300/300?random=7",
-            "https://picsum.photos/300/300?random=8",
-            "https://picsum.photos/300/300?random=9"
-        ],
-        "imagenesPartes": [
-            "https://picsum.photos/300/300?random=10",
-            "https://picsum.photos/300/300?random=11",
-            "https://picsum.photos/300/300?random=12"
-        ]
-    },
-    {
-        "titulo": "Titulo del proyecto 3",
-        "year": "20XX",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.",
-        "sneakPeek": "https://picsum.photos/1800/1800",
-        "imagenesCompleto": [
-            "https://picsum.photos/300/300?random=1",
+            "https://picsum.photos/300/300?random=3",
             "https://picsum.photos/300/300?random=2",
             "https://picsum.photos/300/300?random=3"
         ],
         "imagenes360": [
-            "https://picsum.photos/300/300?random=4",
-            "https://picsum.photos/300/300?random=5",
-            "https://picsum.photos/300/300?random=6"
+            "img/proyecto01/360/1.png",
+            "img/proyecto01/360/2.png",
+            "img/proyecto01/360/3.png",
+            "img/proyecto01/360/4.png",
+            "img/proyecto01/360/5.png",
+            "img/proyecto01/360/6.png",
+            "img/proyecto01/360/7.png",
+            "img/proyecto01/360/8.png"
         ],
-        "imagenesProceso": [
-            "https://picsum.photos/300/300?random=7",
-            "https://picsum.photos/300/300?random=8",
-            "https://picsum.photos/300/300?random=9"
+        "imagenesSlide": [{
+            "src": "https://picsum.photos/300/300?random=1",
+            "texto": "Imagen 1"
+        },
+        {
+            "src": "https://picsum.photos/300/300?random=2",
+            "texto": "Imagen 2"
+        },
+        {
+            "src": "https://picsum.photos/300/300?random=3",
+            "texto": "Imagen 3"
+        }
         ],
-        "imagenesPartes": [
-            "https://picsum.photos/300/300?random=10",
-            "https://picsum.photos/300/300?random=11",
-            "https://picsum.photos/300/300?random=12"
-        ]
+        "colorFondo": "#F2EFE8",
+        "colorTexto": "#5A3A2A"
     }
 ]
