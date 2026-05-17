@@ -55,4 +55,5 @@ main {
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
+    z-index: 10;
 }
