@@ -115,5 +115,44 @@
         ],
         "colorFondo": "#EFEDED",
         "colorTexto": "#3C3735"
+    },
+    {
+        "titulo": "Libro libre",
+        "era": "inmadura",
+        "year": "20XX",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.",
+        "sneakPeek": "https://picsum.photos/1800/1800",
+        "imagenesCompleto": [
+            "https://picsum.photos/300/300?random=1",
+            "https://picsum.photos/300/300?random=2",
+            "https://picsum.photos/300/300?random=3",
+            "https://picsum.photos/300/300?random=2",
+            "https://picsum.photos/300/300?random=3"
+        ],
+        "imagenes360": [
+            "img/proyecto01/360/1.png",
+            "img/proyecto01/360/2.png",
+            "img/proyecto01/360/3.png",
+            "img/proyecto01/360/4.png",
+            "img/proyecto01/360/5.png",
+            "img/proyecto01/360/6.png",
+            "img/proyecto01/360/7.png",
+            "img/proyecto01/360/8.png"
+        ],
+        "imagenesSlide": [{
+            "src": "https://picsum.photos/300/300?random=1",
+            "texto": "Imagen 1"
+        },
+        {
+            "src": "https://picsum.photos/300/300?random=2",
+            "texto": "Imagen 2"
+        },
+        {
+            "src": "https://picsum.photos/300/300?random=3",
+            "texto": "Imagen 3"
+        }
+        ],
+        "colorFondo": "#EFEDED",
+        "colorTexto": "#3C3735"
     }
 ]
