@@ -106,4 +106,8 @@ md-block {
     display: block;
     max-width: 600px;
     margin: auto;
+    padding: 12px;
+}
+md-block h1 {
+    text-align: center;
 }
