@@ -8,7 +8,7 @@ header, footer{
     color: #1c1f23;
 }
 
-.volver {
+.volver, .redes a {
     text-decoration: none;
     color: #1c1f23;
     font-size: 24px;
@@ -44,10 +44,15 @@ main {
 }
 
 #image360 img {
-    width: 100%;
+    width: 300px;
     height: auto;
 }
 
 .infoProyecto {
     padding: 24px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
 }
