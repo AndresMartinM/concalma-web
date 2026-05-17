@@ -5,17 +5,17 @@
         "redes":[
             {
                 "nombre": "Instagram",
-                "icono": "fa-instagram",
+                "icono": "fab fa-instagram",
                 "url": "https://www.instagram.com/andresmartin_elmartin"
             },
             {
                 "nombre": "LinkedIn",
-                "icono": "fa-linkedin",
+                "icono": "fab fa-linkedin",
                 "url": ""
             },
             {
                 "nombre": "Correo",
-                "icono": "fa-envelope",
+                "icono": "fa fa-envelope",
                 "url": "mailto:andres.a.martin.m@gmail.com"
             }
         ]
@@ -26,17 +26,17 @@
         "redes": [
             {
                 "nombre": "Instagram",
-                "icono": "fa-instagram",
+                "icono": "fab fa-instagram",
                 "url": "https://www.instagram.com/sayen_iriarte"
             },
             {
                 "nombre": "LinkedIn",
-                "icono": "fa-linkedin",
+                "icono": "fab fa-linkedin",
                 "url": ""
             },
             {
                 "nombre": "Correo",
-                "icono": "fa-envelope",
+                "icono": "fa fa-envelope",
                 "url": ""
             }
         ]
