@@ -17,7 +17,7 @@ async function proyecto() {
         data[i].redes.forEach((link) => {
             if (link.url != "") {
                 (card.innerHTML += `
-                <a href="` + link.url + `" class="btn btn-outline-primary btn-sm card-link">
+                <a href="` + link.url + `" class="btn btn-outline-primary btn-sm card-link" target="_blank">
                     <i class="` + link.icono + `"></i>
                 </a>
             `);
