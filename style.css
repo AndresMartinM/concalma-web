@@ -63,6 +63,15 @@ header, footer{
     float: right;
 }
 
+.carousel-item {
+    max-height: calc(100vh - 64px);
+}
+
+.indexMain {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
 
 li {
     overflow: hidden;
@@ -95,6 +104,11 @@ main {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     font-size: small;
+}
+.indexCaption {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: calc(50vh - 100px);
 }
 
 .card {
