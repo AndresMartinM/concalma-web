@@ -12,10 +12,14 @@
             "https://picsum.photos/300/300?random=3"
         ],
         "imagenes360": [
-            "img/img1.jpg",
-            "img/img2.jpg",
-            "img/img3.jpg",
-            "img/img2.jpg"
+            "proyecto1/360/1.jpg",
+            "proyecto1/360/2.jpg",
+            "proyecto1/360/3.jpg",
+            "proyecto1/360/4.jpg",
+            "proyecto1/360/5.jpg",
+            "proyecto1/360/6.jpg",
+            "proyecto1/360/7.jpg",
+            "proyecto1/360/8.jpg"
         ],
         "imagenesSlide": [{
             "src": "https://picsum.photos/300/300?random=1",
