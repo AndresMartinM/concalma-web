@@ -12,14 +12,14 @@
             "https://picsum.photos/300/300?random=3"
         ],
         "imagenes360": [
-            "proyecto1/360/1.png",
-            "proyecto1/360/2.png",
-            "proyecto1/360/3.png",
-            "proyecto1/360/4.png",
-            "proyecto1/360/5.png",
-            "proyecto1/360/6.png",
-            "proyecto1/360/7.png",
-            "proyecto1/360/8.png"
+            "proyecto01/360/1.png",
+            "proyecto01/360/2.png",
+            "proyecto01/360/3.png",
+            "proyecto01/360/4.png",
+            "proyecto01/360/5.png",
+            "proyecto01/360/6.png",
+            "proyecto01/360/7.png",
+            "proyecto01/360/8.png"
         ],
         "imagenesSlide": [{
             "src": "https://picsum.photos/300/300?random=1",
