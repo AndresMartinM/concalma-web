@@ -59,19 +59,19 @@ async function proyecto() {
 
     // objeto 360
     var images = [];
-    const imageContainer = document.getElementById('image360');
-    const imageEl = document.getElementById('spin-image');
-    var totalFrames = proyectos[n].imagenes360.length;
-
-
-    let startX = 0;
-    let currentFrame = 0;
-
+    
     document.querySelector("#image360").innerHTML += `
         <div class="orbit">
         <img id="spin-image" src="` + proyectos[n].imagenes360[0] + `">
         </div>
     `;
+
+    const imageContainer = document.getElementById('image360');
+    const imageEl = document.getElementById('spin-image');
+    var framesCounter = proyectos[n].imagenes360.length;
+
+    let startX = 0;
+    let currentFrame = 0;
 
     proyectos[n].imagenes360.forEach((x) => {
         images.push(x);
@@ -79,7 +79,7 @@ async function proyecto() {
 
     // evento para objeto 360
     imageContainer.addEventListener('mousemove', (e) => {
-
+        totalFrames = framesCounter;
         const deltaX = e.screenX - startX;
         if (Math.abs(deltaX) > 30) {
             if (deltaX > 0) {
