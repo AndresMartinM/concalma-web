@@ -101,3 +101,9 @@ main {
     margin: 12px;
     text-decoration: none;
 }
+
+md-block {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+}
