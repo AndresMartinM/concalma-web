@@ -97,13 +97,45 @@ async function proyecto() {
     document.querySelector("#descripcion").innerHTML = proyectos[n].descripcion;
 
     // carrusel de proceso y partes
+    const carPartInd = document.querySelector("#carouselPart-ind");
+    const carPartInn = document.querySelector("#carouselPart-inn");
 
-
-
-
-
-
-
+    proyectos[n].imagenesSlide.forEach((x, i) => {
+        if (x == proyectos[n].imagenesSlide[0]) {
+            carPartInd.innerHTML += `
+            <li
+                data-bs-target="#carouselPart"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="First slide"
+            ></li>`;
+        } else {
+            carPartInd.innerHTML += `
+        <li 
+        data-bs-target="#carouselPart" 
+        data-bs-slide-to="` + i + `" 
+        class="active" 
+        aria-current="true" 
+        aria-label="Slide element"
+        ></li>`;
+        }
+    });
+    proyectos[n].imagenesSlide.forEach((x) => {
+        if (x == proyectos[n].imagenesSlide[0]) {
+            carPartInn.innerHTML += `
+            <div class="carousel-item active">
+            <img src="` + x.src + `" class="w-100 d-block" alt=""/>
+            <p>` + x.texto + `</p>
+            </div>`;
+        } else {
+            carPartInn.innerHTML += `
+        <div class="carousel-item">
+        <img src="` + x.src + `" class="w-100 d-block" alt="Slide element"/>
+        <p>` + x.texto + `</p>
+        </div>`;
+        }
+    });
     
 
 }

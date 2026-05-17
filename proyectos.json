@@ -17,15 +17,18 @@
             "img/img3.jpg",
             "img/img2.jpg"
         ],
-        "imagenesProceso": [
-            "https://picsum.photos/300/300?random=7",
-            "https://picsum.photos/300/300?random=8",
-            "https://picsum.photos/300/300?random=9"
-        ],
-        "imagenesPartes": [
-            "https://picsum.photos/300/300?random=10",
-            "https://picsum.photos/300/300?random=11",
-            "https://picsum.photos/300/300?random=12"
+        "imagenesSlide": [{
+            "src": "https://picsum.photos/300/300?random=1",
+            "texto": "Imagen 1"
+        },
+        {
+            "src": "https://picsum.photos/300/300?random=2",
+            "texto": "Imagen 2"
+        },
+        {
+            "src": "https://picsum.photos/300/300?random=3",
+            "texto": "Imagen 3"
+        }
         ],
         "colorFondo": "#f0f0f0",
         "colorTexto": "#ff0000"
