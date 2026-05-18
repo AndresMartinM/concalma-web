@@ -11,7 +11,7 @@ async function proyectos() {
     data.forEach((x, i) => {
         contenedor.innerHTML += `
         <div class="col-md-4">
-            <a class="card" href="prototipo.html?nro=` + i + `" style="background-color: ` + x.colorFondo + `; color: ` + x.colorTexto + `;">
+            <a class="card" href="proyecto.html?nro=` + i + `" style="background-color: ` + x.colorFondo + `; color: ` + x.colorTexto + `;">
                 <img
                     class="card-img-top"
                     src="` + x.sneakPeek + `"

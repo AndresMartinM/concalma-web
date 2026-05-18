@@ -17,11 +17,11 @@ async function proyectos() {
                 aria-label="First slide"
             ></li>`;
             carInn.innerHTML += `
-            <div class="carousel-item active" style="background-color: ` + x.colorFondo + ` !important; color: ` + x.colorTexto + ` !important;">
-                <img src="` + x.sneakPeek + `" class="w-100 img-fluid d-block" alt="Slide element"/>
-                <div class="carousel-caption indexCaption">
+            <div class="carousel-item indexCarousel-item active" >
+                <img src="` + x.sneakPeek + `" class="d-block" alt="Slide element"/>
+                <div class="carousel-caption indexCaption" style="background-color: ` + hexToRgbA(x.colorTexto) + ` !important; color: ` + x.colorFondo + ` !important;">
                     <h4>` + x.titulo + `</h4>
-                    <a href="prototipo.html?nro=` + i + `" class="btn btn-light">Ver proyecto</a>
+                    <a href="proyecto.html?nro=` + i + `" class="btn btn-outline-light">ver proyecto</a>
                 </div>
             </div>`;
         } else {
@@ -34,11 +34,11 @@ async function proyectos() {
             aria-label="Slide element"
             ></li>`;
             carInn.innerHTML += `
-            <div class="carousel-item" style="background-color: ` + x.colorFondo + ` !important; color: ` + x.colorTexto + ` !important;">
-                <img src="` + x.sneakPeek + `" class="w-100 img-fluid d-block" alt="Slide element"/>
-                <div class="carousel-caption indexCaption">
+            <div class="carousel-item indexCarousel-item">
+                <img src="` + x.sneakPeek + `" class=d-block" alt="Slide element"/>
+                <div class="carousel-caption indexCaption" style="background-color: ` + hexToRgbA(x.colorTexto) + ` !important; color: ` + x.colorFondo + ` !important;">
                     <h4>` + x.titulo + `</h4>
-                    <a href="prototipo.html?nro=` + i + `" class="btn btn-light">Ver proyecto</a>
+                    <a href="proyecto.html?nro=` + i + `" class="btn btn-outline-light">ver proyecto</a>
                 </div>
             </div>`;
         }
@@ -49,3 +49,16 @@ async function proyectos() {
 proyectos().catch((error) => {
     console.error("Error al cargar el proyecto:", error);
 });
+
+function hexToRgbA(hex){
+    var c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length== 3){
+            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',0.6)';
+    }
+    console.error('Bad Hex');
+}
