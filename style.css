@@ -75,6 +75,11 @@ header, footer{
     filter: blur(2px);
 }
 
+.card img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
 
 li {
     overflow: hidden;
