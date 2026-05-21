@@ -42,7 +42,7 @@
     },
     {
         "nombre": "Amanda Iriarte",
-        "descripcion": "Diseñadora Industrial de la Universidad de Chile...",
+        "descripcion": "Diseñadora Industrial de la Universidad de Chile, con un interés en la producción a mano detallista como el bordado, la costura y el vellón agujado. Ha participado y trabajado tanto en proyectos gráficos, físicos y de servicios, en sus diversas etapas.",
         "redes": [
             {
                 "nombre": "Instagram",
@@ -62,7 +62,7 @@
             {
                 "nombre": "Portafolio",
                 "icono": "fa fa-briefcase",
-                "url": ""
+                "url": "https://www.behance.net/gallery/185610223/Portafolio-digital"
             },
             {
                 "nombre": "YouTube",
