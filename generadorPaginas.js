@@ -140,6 +140,9 @@ async function proyecto() {
         </div>`;
         }
     });
+    // archivos pdf svg 
+
+    // licencia creative commons
     
 
 }
