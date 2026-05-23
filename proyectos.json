@@ -35,6 +35,17 @@
             "texto": "Imagen 3"
         }
         ],
+        "archivos": [
+            {
+                "nombre": "Archivo 1",
+                "url": ""
+            },
+            {
+                "nombre": "Archivo 2",
+                "url": ""
+            }
+        ],
+        "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
         "colorFondo": "#E1DFEC",
         "colorTexto": "#522673"
     },
@@ -74,6 +85,17 @@
             "texto": "Imagen 3"
         }
         ],
+        "archivos": [
+            {
+                "nombre": "Archivo 1",
+                "url": ""
+            },
+            {
+                "nombre": "Archivo 2",
+                "url": ""
+            }
+        ],
+        "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
         "colorFondo": "#E4EBE0",
         "colorTexto": "#31683E"
     },
@@ -113,6 +135,17 @@
             "texto": "Imagen 3"
         }
         ],
+        "archivos": [
+            {
+                "nombre": "Archivo 1",
+                "url": ""
+            },
+            {
+                "nombre": "Archivo 2",
+                "url": ""
+            }
+        ],
+        "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
         "colorFondo": "#EFEDED",
         "colorTexto": "#3C3735"
     },
@@ -152,6 +185,17 @@
             "texto": "Imagen 3"
         }
         ],
+        "archivos": [
+            {
+                "nombre": "Archivo 1",
+                "url": ""
+            },
+            {
+                "nombre": "Archivo 2",
+                "url": ""
+            }
+        ],
+        "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
         "colorFondo": "#EFEDED",
         "colorTexto": "#3C3735"
     }
