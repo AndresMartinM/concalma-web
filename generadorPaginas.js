@@ -159,6 +159,12 @@ async function proyecto() {
                         <a href="` + x.url + `" target="_blank" class="btn btn-outline-dark archivo">` + x.nombre + ` <i class="fa fa-cube"></i></a>
                     </div>
                 `;
+            } else if (x.url.endsWith(".zip")) {
+                extra.innerHTML += `
+                    <div class="col-md-2 d-flex align-items-center justify-content-center">
+                        <a href="` + x.url + `" target="_blank" class="btn btn-outline-dark archivo">` + x.nombre + ` <i class="fa fa-file-archive"></i></a>
+                    </div>
+                `;
             } else {
                 extra.innerHTML += `
                     <div class="col-md-2 d-flex align-items-center justify-content-center">
