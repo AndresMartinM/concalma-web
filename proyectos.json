@@ -45,7 +45,7 @@
                 "url": ""
             }
         ],
-        "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "licencia": "",
         "colorFondo": "#E1DFEC",
         "colorTexto": "#522673"
     },
@@ -95,7 +95,7 @@
                 "url": ""
             }
         ],
-        "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "licencia": "",
         "colorFondo": "#E4EBE0",
         "colorTexto": "#31683E"
     },
@@ -138,7 +138,7 @@
         "archivos": [
             {
                 "nombre": "Archivo 1",
-                "url": ""
+                "url": "https://pdfobject.com/pdf/sample.pdf"
             },
             {
                 "nombre": "Archivo 2",
@@ -195,7 +195,7 @@
                 "url": ""
             }
         ],
-        "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "licencia": "",
         "colorFondo": "#EFEDED",
         "colorTexto": "#3C3735"
     }
