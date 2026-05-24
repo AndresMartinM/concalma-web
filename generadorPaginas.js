@@ -59,7 +59,7 @@ async function proyecto() {
 
     // objeto 360
     var images = [];
-    
+
     document.querySelector("#image360").innerHTML += `
         <div class="orbit">
         <img id="spin-image" src="` + proyectos[n].imagenes360[0] + `">
@@ -140,10 +140,40 @@ async function proyecto() {
         </div>`;
         }
     });
-    // archivos pdf svg 
+
+    // archivos pdf stl 
+
+    var extra = document.querySelector("#extra");
+
+    proyectos[n].archivos.forEach((x) => {
+        if (x.url != "") {
+            console.log(x.url);
+            if (x.url.endsWith(".pdf")) {
+                extra.innerHTML += `
+                    <div class="col-md-2">
+                        <a href="` + x.url + `" target="_blank" class="btn btn-outline-dark archivo">` + x.nombre + ` <i class="fa fa-book-open"></i></a>
+                    </div>
+                `;
+            } else if (x.url.endsWith(".stl")) {
+                extra.innerHTML += `
+                    <div class="col-md-2">
+                        <a href="` + x.url + `" target="_blank" class="btn btn-outline-dark archivo">` + x.nombre + ` <i class="fa fa-cube"></i></a>
+                    </div>
+                `;
+            }
+        }
+    });
 
     // licencia creative commons
-    
+
+    if (proyectos[n].licencia == "https://creativecommons.org/licenses/by-nc-sa/4.0/") {
+        extra.innerHTML += `
+    <div class="col-md-2" style="display: flex; align-items: center; justify-content: center; margin: 12px;">
+        <a href="` + proyectos[n].licencia + `" target="_blank" class=""><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licencia Creative Commons"></a>
+    </div>
+    `;
+    }
+
 
 }
 

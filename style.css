@@ -46,6 +46,10 @@ header, footer{
     color: #1c1f23;
 }
 
+.archivo {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .volver, .redes a {
     text-decoration: none;
     color: #1c1f23;
