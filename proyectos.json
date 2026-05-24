@@ -3,49 +3,86 @@
         "titulo": "Cosplay Setsuna",
         "era": "pre-concalma",
         "year": "2025",
-        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.",
-        "sneakPeek": "https://picsum.photos/1800/1800",
+        "descripcion": "Traje basado en el personaje Setsuna de la serie de anime \"Yashahime: Princess Half-Demon\". Desarrollado con técnicas de fabricación japonesas, tanto para la ropa como la armadura.",
+        "sneakPeek": "setsuna/sneakpeek.jpg",
         "imagenesCompleto": [
-            "https://picsum.photos/300/300?random=1",
-            "https://picsum.photos/300/300?random=2",
-            "https://picsum.photos/300/300?random=3",
-            "https://picsum.photos/300/300?random=2",
-            "https://picsum.photos/300/300?random=3"
+            "setsuna/completo1.jpg",
+            "setsuna/completo2.jpg",
+            "setsuna/completo3.jpg",
+            "setsuna/completo4.jpg",
+            "setsuna/completo5.jpg"
         ],
         "imagenes360": [
-            "img/proyecto01/360/1.png",
-            "img/proyecto01/360/2.png",
-            "img/proyecto01/360/3.png",
-            "img/proyecto01/360/4.png",
-            "img/proyecto01/360/5.png",
-            "img/proyecto01/360/6.png",
-            "img/proyecto01/360/7.png",
-            "img/proyecto01/360/8.png"
+            "setsuna/360/1.png",
+            "setsuna/360/2.png",
+            "setsuna/360/3.png",
+            "setsuna/360/4.png",
+            "setsuna/360/5.png",
+            "setsuna/360/6.png",
+            "setsuna/360/7.png",
+            "setsuna/360/8.png"
         ],
-        "imagenesSlide": [{
-            "src": "https://picsum.photos/300/300?random=1",
-            "texto": "Imagen 1"
-        },
-        {
-            "src": "https://picsum.photos/300/300?random=2",
-            "texto": "Imagen 2"
-        },
-        {
-            "src": "https://picsum.photos/300/300?random=3",
-            "texto": "Imagen 3"
-        }
+        "imagenesSlide": [
+            {
+                "src": "setsuna/slide1.jpg",
+                "texto": "Kosode azul con hitomezashi de mariposas bordado con perlé de algodón blanco."
+            },
+            {
+                "src": "setsuna/slide2.jpg",
+                "texto": "Bocetos del traje basados en el diseño de Setsuna del anime \"Yashahime: Princess Half-Demon\"."
+            },
+            {
+                "src": "setsuna/slide3.jpg",
+                "texto": "Planificación del bordado hitomezashi, se probaron diferentes opciones pensando en la eficiencia de los trazos y la legibilidad de la mariposa."
+            },
+            {
+                "src": "setsuna/slide4.jpg",
+                "texto": "Bocetos de detalles de la armadura, basados en técnicas de fabricación de armaduras samurai."
+            },
+            {
+                "src": "setsuna/slide5.jpg",
+                "texto": "Detalles de la armadura de Setsuna, hecha con laminas de acero negro de 0.8mm de espesor moldeadas a mano."
+            },
+            {
+                "src": "setsuna/slide6.jpg",
+                "texto": "Bocetos de la naginata de Setsuna."
+            },
+            {
+                "src": "setsuna/slide7.jpg",
+                "texto": "Detalle de la naginata hecha con impresión 3D en PLA y madera con una fractura posterior a un evento."
+            },
+            {
+                "src": "setsuna/slide8.jpg",
+                "texto": "Naginata reparada tras la fractura."
+            }
         ],
         "links": [
             {
-                "nombre": "Archivo 1",
-                "url": ""
+                "nombre": "Ficha",
+                "url": "https://example.com/archivo1.pdf"
             },
             {
-                "nombre": "Archivo 2",
-                "url": ""
+                "nombre": "Imágenes en alta resolución",
+                "url": "https://example.com/archivo2.zip"
+            },
+            {
+                "nombre": "Hoja de la Naginata",
+                "url": "https://example.com/archivo2.stl"
+            },
+            {
+                "nombre": "Guarda de la Naginata",
+                "url": "https://example.com/archivo3.stl"
+            },
+            {
+                "nombre": "empuñadura de la Naginata",
+                "url": "https://example.com/archivo4.stl"
+            },
+            {
+                "nombre": "repositorio",
+                "url": "https://github.com/AndresMartinM/concalma-web"
             }
         ],
-        "licencia": "",
+        "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
         "colorFondo": "#E1DFEC",
         "colorTexto": "#522673"
     },
@@ -72,18 +109,19 @@
             "img/proyecto01/360/7.png",
             "img/proyecto01/360/8.png"
         ],
-        "imagenesSlide": [{
-            "src": "https://picsum.photos/300/300?random=1",
-            "texto": "Imagen 1"
-        },
-        {
-            "src": "https://picsum.photos/300/300?random=2",
-            "texto": "Imagen 2"
-        },
-        {
-            "src": "https://picsum.photos/300/300?random=3",
-            "texto": "Imagen 3"
-        }
+        "imagenesSlide": [
+            {
+                "src": "https://picsum.photos/300/300?random=1",
+                "texto": "Imagen 1"
+            },
+            {
+                "src": "https://picsum.photos/300/300?random=2",
+                "texto": "Imagen 2"
+            },
+            {
+                "src": "https://picsum.photos/300/300?random=3",
+                "texto": "Imagen 3"
+            }
         ],
         "links": [
             {
@@ -93,7 +131,7 @@
             {
                 "nombre": "Archivo 2",
                 "url": ""
-            }
+            }  
         ],
         "licencia": "",
         "colorFondo": "#E4EBE0",
@@ -122,18 +160,19 @@
             "img/proyecto01/360/7.png",
             "img/proyecto01/360/8.png"
         ],
-        "imagenesSlide": [{
-            "src": "https://picsum.photos/300/300?random=1",
-            "texto": "Imagen 1"
-        },
-        {
-            "src": "https://picsum.photos/300/300?random=2",
-            "texto": "Imagen 2"
-        },
-        {
-            "src": "https://picsum.photos/300/300?random=3",
-            "texto": "Imagen 3"
-        }
+        "imagenesSlide": [
+            {
+                "src": "https://picsum.photos/300/300?random=1",
+                "texto": "Imagen 1"
+            },
+            {
+                "src": "https://picsum.photos/300/300?random=2",
+                "texto": "Imagen 2"
+            },
+            {
+                "src": "https://picsum.photos/300/300?random=3",
+                "texto": "Imagen 3"
+            }
         ],
         "links": [
             {
@@ -176,18 +215,19 @@
             "img/proyecto01/360/7.png",
             "img/proyecto01/360/8.png"
         ],
-        "imagenesSlide": [{
-            "src": "https://picsum.photos/300/300?random=1",
-            "texto": "Imagen 1"
-        },
-        {
-            "src": "https://picsum.photos/300/300?random=2",
-            "texto": "Imagen 2"
-        },
-        {
-            "src": "https://picsum.photos/300/300?random=3",
-            "texto": "Imagen 3"
-        }
+        "imagenesSlide": [
+            {
+                "src": "https://picsum.photos/300/300?random=1",
+                "texto": "Imagen 1"
+            },
+            {
+                "src": "https://picsum.photos/300/300?random=2",
+                "texto": "Imagen 2"
+            },
+            {
+                "src": "https://picsum.photos/300/300?random=3",
+                "texto": "Imagen 3"
+            }
         ],
         "links": [
             {
