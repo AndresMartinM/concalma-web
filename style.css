@@ -49,6 +49,9 @@ header, footer{
 .archivo {
     font-family: 'Josefin Sans', sans-serif;
 }
+#extra {
+padding: 12px;
+}
 
 .volver, .redes a {
     text-decoration: none;
