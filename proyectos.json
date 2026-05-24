@@ -35,7 +35,7 @@
             "texto": "Imagen 3"
         }
         ],
-        "archivos": [
+        "links": [
             {
                 "nombre": "Archivo 1",
                 "url": ""
@@ -85,7 +85,7 @@
             "texto": "Imagen 3"
         }
         ],
-        "archivos": [
+        "links": [
             {
                 "nombre": "Archivo 1",
                 "url": ""
@@ -135,7 +135,7 @@
             "texto": "Imagen 3"
         }
         ],
-        "archivos": [
+        "links": [
             {
                 "nombre": "sample.pdf",
                 "url": "https://pdfobject.com/pdf/sample.pdf"
@@ -143,6 +143,10 @@
             {
                 "nombre": "sample.stl",
                 "url": "https://example.com/sample.stl"
+            },
+            {
+                "nombre": "repositorio",
+                "url": "https://github.com/AndresMartinM/concalma-web"
             }
         ],
         "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
@@ -185,7 +189,7 @@
             "texto": "Imagen 3"
         }
         ],
-        "archivos": [
+        "links": [
             {
                 "nombre": "Archivo 1",
                 "url": ""

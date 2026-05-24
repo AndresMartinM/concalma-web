@@ -141,11 +141,11 @@ async function proyecto() {
         }
     });
 
-    // archivos pdf stl 
+    // links y archivos relacionados al proyecto
 
     var extra = document.querySelector("#extra");
 
-    proyectos[n].archivos.forEach((x) => {
+    proyectos[n].links.forEach((x) => {
         if (x.url != "") {
             console.log(x.url);
             if (x.url.endsWith(".pdf")) {
@@ -158,6 +158,12 @@ async function proyecto() {
                 extra.innerHTML += `
                     <div class="col-md-2 d-flex align-items-center justify-content-center">
                         <a href="` + x.url + `" target="_blank" class="btn btn-outline-dark archivo">` + x.nombre + ` <i class="fa fa-cube"></i></a>
+                    </div>
+                `;
+            } else {
+                extra.innerHTML += `
+                    <div class="col-md-2 d-flex align-items-center justify-content-center">
+                        <a href="` + x.url + `" target="_blank" class="btn btn-dark archivo">` + x.nombre + ` <i class="fa fa-link"></i></a>
                     </div>
                 `;
             }
