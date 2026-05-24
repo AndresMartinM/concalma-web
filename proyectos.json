@@ -100,8 +100,8 @@
         "colorTexto": "#31683E"
     },
     {
-        "titulo": "Libro libre",
-        "era": "inmadura",
+        "titulo": "Proyecto de ejemplo",
+        "era": "ejemplo",
         "year": "20XX",
         "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.",
         "sneakPeek": "https://picsum.photos/1800/1800",
@@ -137,12 +137,12 @@
         ],
         "archivos": [
             {
-                "nombre": "Archivo 1",
+                "nombre": "sample.pdf",
                 "url": "https://pdfobject.com/pdf/sample.pdf"
             },
             {
-                "nombre": "Archivo 2",
-                "url": ""
+                "nombre": "sample.stl",
+                "url": "https://example.com/sample.stl"
             }
         ],
         "licencia": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
