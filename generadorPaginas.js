@@ -147,7 +147,6 @@ async function proyecto() {
 
     proyectos[n].links.forEach((x) => {
         if (x.url != "") {
-            console.log(x.url);
             if (x.url.endsWith(".pdf")) {
                 extra.innerHTML += `
                     <div class="col-md-2 d-flex align-items-center justify-content-center">
